@@ -14,7 +14,7 @@ async function Companies(){
   
       
       companies = await companiesResponse.json();
-      console.log(companies)
+       
     } catch (err) {
   
       error = err.message || "An unexpected error occurred.";
