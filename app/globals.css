@@ -4,3 +4,15 @@
  .boxShadow{
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
  }
+ .animate{
+   animation: fadeIn forwards 2s;
+    
+ }
+ @keyframes fadeIn {
+   from {
+     scale: 0;
+   }
+   to {
+      scale: 1;
+   }
+ }
