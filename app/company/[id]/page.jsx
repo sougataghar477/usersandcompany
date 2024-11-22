@@ -24,12 +24,12 @@ export default async function CompanyDetail({ params }) {
     return (
         <div className="max-w-screen-lg mx-auto px-4 py-4 md:py-8">
             <h1 className="text-4xl mb-4">Company Detail</h1>
-            {error ? <h1>{error}</h1> : <div className="boxShadow p-4 rounded-md">
+            {error ? <h1>{error}</h1> : <div className="boxShadow bg-blue-950 text-white p-4 rounded-md">
                 <p><b>Name:</b> {company.companyName}</p>
                 <p><b>Email:</b> {company.email}</p>
                 <p><b>Mobile Number:</b> {company.mobileNumber}</p>
-                <address><b>Address:</b> {company.address}</address>
-                <p><b>id:</b> {company.id}</p>
+                <p><b>Address:</b> {company.address}</p>
+                <p><b>Id:</b> {company.id}</p>
                 {users && (
                     <div>
                         <b>Users:</b>

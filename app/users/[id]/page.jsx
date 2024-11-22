@@ -27,11 +27,11 @@ export default async function User({ params }) {
             )}
 
             {user && (
-                <div className="boxShadow p-4 rounded-md">
+                <div className="boxShadow bg-blue-950 text-white p-4 rounded-md">
                     <p><strong>Name:</strong> {user.name}</p>
                     <p><strong>Email:</strong> {user.email}</p>
                     <p><strong>Phone:</strong> {user.mobileNumber}</p>
-                    <p><strong>ID:</strong> {user.id}</p>
+                    <p><strong>Id:</strong> {user.id}</p>
                 </div>
             )}
         </div>
