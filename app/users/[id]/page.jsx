@@ -18,7 +18,7 @@ export default async function User({ params }) {
 
     return (
         <div className="max-w-screen-lg mx-auto px-4 py-4 md:py-8">
-            <h1 className="mb-4 text-2xl">User Details</h1>
+            <h1 className="mb-4 text-4xl">User Details</h1>
 
             {error && (
                 <div className="text-red-500">

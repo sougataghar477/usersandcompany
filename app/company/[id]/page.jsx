@@ -17,7 +17,7 @@ export default async function CompanyDetail({ params }) {
 
         let allusers = await usersFetch.json();
         
-        users = allusers.filter(i => i.id === company.id)
+        users = allusers.filter(i => i.companyId=== company.id)
     } catch (err) {
         error = err.message || "An unexpected error occurred.";
     }
