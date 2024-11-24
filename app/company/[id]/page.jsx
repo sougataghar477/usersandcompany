@@ -10,7 +10,7 @@ export default async function CompanyDetail({ params }) {
 
         const usersFetch = await fetch("https://673736a9aafa2ef222330e54.mockapi.io/users");
 
-        if (!fetchCompanyById.ok && !usersFetch.ok) {
+        if (!fetchCompanyById.ok || !usersFetch.ok) {
             throw new Error(`Company Id not found.`);
         }
         company = await fetchCompanyById.json();
